@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Flex-Direction</title>
+        
+    </head>
+    <body>
+        <h1>Flex-Direction: row</h1>
+        <div class="container">
+            <div class="items item1">One</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Three</div>
+            <div class="items item4">Fours</div>
+        </div>
+
+
+        <style>
+            body{ font-family: Arial, Helvetica; }
+            h1{ padding : 0 0 0 40px; }
+            .container{ display: flex; flex-direction: row; background: #eee; width: 600px; margin: 50px auto 0; padding: 10px; border: 3px solid #000; }
+            .items{  text-align: center; color: #fff; font-size: 20px; font-weight: bold; padding: 10px; }
+            .item1{ background-color: orangered; }
+            .item2{ background-color: yellowgreen; }
+            .item3{ background-color: mediumpurple; }
+            .item4{ background-color: hotpink; }
+        </style>
+
+        <h1>Flex-Direction: row-reverse</h1>
+        <div class="container-reverse">
+            <div class="reverse reverse1">One</div>
+            <div class="reverse reverse2">Two</div>
+            <div class="reverse reverse3">Three</div>
+            <div class="reverse reverse4">Fours</div>
+        </div>
+
+
+        <style>
+            body{ font-family: Arial, Helvetica; }
+            h1{ padding : 0 0 0 40px; }
+            .container-reverse{ display: flex; flex-direction: row-reverse; background: #eee; width: 600px; margin: 50px auto 0; padding: 10px; border: 3px solid #000; }
+            .reverse{  text-align: center; color: #fff; font-size: 20px; font-weight: bold; padding: 10px; }
+            .reverse1{ background-color: orangered; }
+            .reverse2{ background-color: yellowgreen; }
+            .reverse3{ background-color: mediumpurple; }
+            .reverse4{ background-color: hotpink; }
+        </style>
+
+        <h1>Flex-Direction: column</h1>
+        <div class="container-column">
+            <div class="column column1">One</div>
+            <div class="column column2">Two</div>
+            <div class="column column3">Three</div>
+            <div class="column column4">Fours</div>
+        </div>
+
+
+        <style>
+            body{ font-family: Arial, Helvetica; }
+            h1{ padding : 0 0 0 40px; }
+            .container-column-reverse{ display: flex; flex-direction: column-reverse; background: #eee; width: 600px; margin: 50px auto 0; padding: 10px; border: 3px solid #000; }
+            .column-reverse{  text-align: center; color: #fff; font-size: 20px; font-weight: bold; padding: 10px; }
+            .column-reverse1{ background-color: orangered; }
+            .column-reverse2{ background-color: yellowgreen; }
+            .column-reverse3{ background-color: mediumpurple; }
+            .column-reverse4{ background-color: hotpink; }
+        </style>
+
+        <h1>Flex-Direction: column-reverse</h1>
+        <div class="container-column-reverse">
+            <div class="column-reverse column-reverse1">One</div>
+            <div class="column-reverse column-reverse2">Two</div>
+            <div class="column-reverse column-reverse3">Three</div>
+            <div class="column-reverse column-reverse4">Fours</div>
+        </div>
+
+
+        <style>
+            body{ font-family: Arial, Helvetica; }
+            h1{ padding : 0 0 0 40px; }
+            .container-column{ display: flex; flex-direction: column; background: #eee; width: 600px; margin: 50px auto 0; padding: 10px; border: 3px solid #000; }
+            .column{  text-align: center; color: #fff; font-size: 20px; font-weight: bold; padding: 10px; }
+            .column1{ background-color: orangered; }
+            .column2{ background-color: yellowgreen; }
+            .column3{ background-color: mediumpurple; }
+            .column4{ background-color: hotpink; }
+        </style>
+    </body>
+</html>

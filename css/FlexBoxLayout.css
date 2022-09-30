@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: #566c26;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header a{
+    color: #fff;
+}
+#logo{
+    margin: 0 auto;
+    font-size: 30px;
+}
+#menu li{
+    padding: 10px;
+}
+#socil-links li{
+    padding: 10px;
+}
+/* main */
+
+#main{
+    display: flex;
+}
+article{
+    padding: 10px;
+}
+aside{
+    flex: 0 0 20vw;
+    background: beige;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+
+aside ul a{
+    color: #566c2b;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid gray;
+}
+
+aside img{
+    width: 100%;
+}
+
+/* Services */
+
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-box{
+    border: 1px solid #eee;
+    flex-basis: 32%;
+    max-width: 370px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-title h3{
+    margin: 5px 0 10px;
+}
+.service-desc p{
+    margin: 0 0 10px;
+}
+.service-box img{
+    width: 100%;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.call-to-action a{
+    background: gray;
+    border: 2px solid transparent;
+    color: #fff;
+    display: block;
+    padding: 8px 13px;
+}
+.call-to-action a:hover{
+    background: transparent;
+    color: gray;
+    border: 2px solid gray;
+}
+/* Footer */
+
+footer{
+    background: #556c2b;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+/* Responsive */
+
+@media(max-width: 850px){
+    aside{
+        flex: 0 0 30vw;
+    }
+    .service-box{
+        flex-basis: 48%;
+        max-width: 370px;
+    }
+}
+
+@media(max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        order: -1;
+    }
+    #main{
+        flex-direction: column;
+    }
+    article{
+        order: -1;
+    }
+    .service-container{
+        flex-direction: column;
+    }
+    .service-box{
+        max-width: 450%;
+    }
+}
+
+@media(max-width: 700px){
+    .service-container{
+        flex-direction: column;
+    }
+    .service-box{
+        max-width: 100%;
+    }
+}

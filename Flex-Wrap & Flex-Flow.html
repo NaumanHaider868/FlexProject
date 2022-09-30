@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Flex-Wrap:wrap</title>
+    </head>
+    <body>
+
+        <h1>Flex-Wrap</h1>
+
+        <div class="container">
+            <div class="items item1">One</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Three</div>
+            <div class="items item4">Fours</div>
+            <div class="items item1">Five</div>
+            <div class="items item2">Six</div>
+            <div class="items item3">Seven</div>
+            <div class="items item4">Eight</div>
+        </div>
+
+
+        <style>
+            body{ font-family: Arial, Helvetica; }
+            h1{ padding : 0 0 0 40px; }
+            .container{ margin-bottom: 55px; display: flex; flex-direction: column; flex-wrap: wrap;   background: #eee; width: 600px; height: 100px; margin: 50px auto 260px; padding: 10px; border: 3px solid #000; }
+            .items{  text-align: center; color: #fff; font-size: 20px; font-weight: bold; padding: 10px; }
+            .item1{ background-color: orangered; }
+            .item2{ background-color: yellowgreen; }
+            .item3{ background-color: mediumpurple; }
+            .item4{ background-color: hotpink; }
+        </style>
+
+        <h1>flex-flow</h1>
+        <div class="container-flow">
+            <div class="flows flow1">One</div>
+            <div class="flows flow2">Two</div>
+            <div class="flows flow3">Three</div>
+            <div class="flows flow4">Fours</div>
+            <div class="flows flow1">Five</div>
+            <div class="flows flow2">Six</div>
+            <div class="flows flow3">Seven</div>
+            <div class="flows flow4">Eight</div>
+        </div>
+
+
+        <style>
+            body{ font-family: Arial, Helvetica; }
+            h1{ padding : 0 0 0 40px; }
+            .container-flow{ margin-bottom: 55px; display: flex; flex-flow: row wrap;   background: #eee; width: 600px; margin: 50px auto 260px; padding: 10px; border: 3px solid #000; }
+            .flows{  text-align: center; color: #fff; font-size: 20px; font-weight: bold; padding: 10px; }
+            .flow1{ background-color: orangered; }
+            .flow2{ background-color: yellowgreen; }
+            .flow3{ background-color: mediumpurple; }
+            .flow4{ background-color: hotpink; }
+        </style>
+
+        
+    </body>
+</html>

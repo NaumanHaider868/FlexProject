@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Nested-Flex</title>
+    </head>
+    <body>
+        <h1>Nested-Flex</h1>
+
+        <div class="container">
+            <div class="items item1">One</div>
+            <div class="items item2">
+                <div class="subitem subitem1">A</div>
+                <div class="subitem subitem2">B</div>
+                <div class="subitem subitem3">C</div>
+            </div>
+            <div class="items item3">Three</div>
+        </div>
+
+
+        <style>
+            body{
+                font-family: Arial, Helvetica;
+            }
+            h1{
+                margin-left: 120px;
+                padding : 0 0 0 40px;
+            }
+            .container{
+                background: #eee;
+                margin: 50px;
+                padding: 0;
+                border: 3px solid #000;
+                display: flex;
+                flex-direction: column;
+            }
+            .items{
+                
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding: 0;
+                height: 100px;
+            }
+            .item1{background: orangered;}
+            .item2{
+                background: skyblue;
+                display: flex;
+            }
+            .item2 .subitem{
+                background: antiquewhite;
+                color: #000;
+                flex-grow: 1;
+                margin: 5px;
+            }
+            .item3{background: hotpink;}
+        </style>
+    </body>
+</html>
